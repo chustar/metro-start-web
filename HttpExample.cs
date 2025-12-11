@@ -1,9 +1,9 @@
-using Microsoft.Azure.Functions.Worker;
-using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Extensions.Logging;
 
-namespace metro_start_web;
+namespace MetroStart;
 
 public class HttpExample
 {

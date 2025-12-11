@@ -1,13 +1,12 @@
-namespace MetroStart.Weather.Respnoses
+namespace MetroStart.Weather.Respnoses;
+
+using Newtonsoft.Json;
+
+public class Coord
 {
-    using Newtonsoft.Json;
+    [JsonProperty("lon")]
+    public double Lon { get; set; }
 
-    public class Coord
-    {
-        [JsonProperty("lon")]
-        public double Lon { get; set; }
-
-        [JsonProperty("lat")]
-        public double Lat { get; set; }
-    }
+    [JsonProperty("lat")]
+    public double Lat { get; set; }
 }

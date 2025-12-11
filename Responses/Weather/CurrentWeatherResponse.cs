@@ -43,7 +43,7 @@ namespace MetroStart.Weather.Respnoses
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        public static CurrentWeatherResponse FromJson(string json) => JsonConvert.DeserializeObject<CurrentWeatherResponse>(json, Converter.Settings);
+        public static CurrentWeatherResponse? FromJson(string json) => JsonConvert.DeserializeObject<CurrentWeatherResponse>(json, Converter.Settings);
 
         public string ToJson() => JsonConvert.SerializeObject(this, Converter.Settings);
 

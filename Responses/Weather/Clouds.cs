@@ -1,10 +1,9 @@
-namespace MetroStart.Weather.Responses
-{
-    using Newtonsoft.Json;
+namespace MetroStart.Weather.Responses;
 
-    public class Clouds
-    {
-        [JsonProperty("all")]
-        public long All { get; set; }
-    }
+using Newtonsoft.Json;
+
+public class Clouds
+{
+    [JsonProperty("all")]
+    public long All { get; set; }
 }

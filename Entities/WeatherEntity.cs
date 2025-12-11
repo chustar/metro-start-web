@@ -26,7 +26,7 @@ namespace MetroStart.Entities
         public TimeSpan WeatherForecastAge => DateTime.Now - WeatherForecastModified;
 
         public string CurrentWeatherJson { get; set; }
-        public CurrentWeatherResponse CurrentWeather
+        public CurrentWeatherResponse? CurrentWeather
         {
             get => CurrentWeatherResponse.FromJson(CurrentWeatherJson);
             set
@@ -37,7 +37,7 @@ namespace MetroStart.Entities
         }
 
         public string WeatherForecastJson { get; set; }
-        public WeatherForecastResponse WeatherForecast
+        public WeatherForecastResponse? WeatherForecast
         {
             get => WeatherForecastResponse.FromJson(WeatherForecastJson);
             set
